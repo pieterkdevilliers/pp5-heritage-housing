@@ -1,53 +1,4 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Codeanywhere Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Gitpod Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the Gitpod Template Instructions at least once, though! It contains some important information about Gitpod and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace. 
@@ -94,7 +45,10 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+* The sale price of a property is assumed to be correlated with the features of the house. However, the hypothesis here is that not all features are created equal. Some features will be much more closely correlated with the sale price of a property.
+* In order to estimate the sale price of a property, we need to determine which of the property features correlated more closely to the sale price.
+* In this project we are using Spearman and Pearson correlation to study the feature correlation to the sale price.
+* In this project we are using Predictive Power Score to determine the features of a property most closely correlated to the sale price.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -102,7 +56,34 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+1. What are the business requirements?
+    * The client wants to identify the correlation(s) between the features of a property, and the sale price of a speciic property.
+    * The client wants to be able to estimate/predict the sale price of their 4 inherited houses, or any other houses in Ames, Iowa, as a cosideration for future property investments.
+2. Is there any business requirement that can be answered with conventional data analysis?
+    * We can use Data Analasys to identify those property features most closely correlated to the sale price of a house.
+3. Does the client need a dashboard or an API endpoint?
+    * The client only needs a dashboard in this instance.
+4. What does the client consider as a successful project outcome?
+    * A dashboard showing the most closely correlated features of a house, to the sale price.
+    * The ability to estimate/predicts the sale price for the 4 inherited houses or any other house in Ames, Iowa.
+5. Can you break down the project into Epics and User Stories?
+    * Gathering requirements and collecting data.
+    * Datacleaning, visualization and preparation.
+    * Model training and optimization.
+    * Dashboard designing and development.
+    * Dashboard deployment.
+6. Ethical or Privacy concerns?
+    * As the data is a public data set, there are not concerns.
+7. Does the data suggest a particular model?
+    * The data suggests a regressor where the target is the sale price.
+8. What are the model's inputs and intended outputs?
+    * The inputs consist of the public data set including house features and sale price.
+    * The outputs are the correlation studies and visualizations, as well as the ability to estimate/predict a properties' sale price.
+9. What are the criteria for the performance goal of the predictions?
+    * An R2 score of at least 0.75 on the train set and  the test set.
+10. How will the client benefit?
+    * The client will be able to estimate the sale price of the inherited properties, based on data analysis and not just opinion.
+    * The client will also be able to estimate/predict the sale price of future investment properties. This can help in deciding which properties to buy, what changes to make to properties to get a higher sale price etc...
 
 
 ## Dashboard Design
