@@ -8,7 +8,6 @@ from src.data_loading import load_house_price_data
 def house_price_data_exploration():
     st.write("This is the house price data exploration page.")
 
-    # load housing data, correlation coefficients and a dictionary used in encoding
     # object variables
     df = load_house_price_data()
  
@@ -61,26 +60,6 @@ def house_price_data_exploration():
         st.write(f"* Plot Sale Price against attribute")
         scatterplot(df)
 
-
-# # function created using code from "HouseSalePrices" notebook - Heatmap section
-# def heatmap(df):
-#     import numpy as np
-#     import matplotlib.pyplot as plt
-#     import seaborn as sns
-#     fig, axes = plt.subplots(figsize=(12,5))
-#     annot_size = 8
-
-#     mask = np.zeros_like(df, dtype=np.bool)
-#     mask[abs(df) < 0.4] = True
-
-#     sns.heatmap(data=df, annot=True, xticklabels=True, yticklabels=True,
-#                 mask=mask, cmap='viridis', annot_kws={"size": annot_size}, ax=axes,
-#                 linewidth=0.5)
-
-#     st.pyplot(fig)
-
-
-# Using code from "Sale Price Study" notebook
 def scatterplot(df):
 
     for col in ['TotalBsmtSF', '1stFlrSF', 'GrLivArea', 'GarageArea', 'YearBuilt', 'OverallQual']:
