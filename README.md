@@ -87,9 +87,34 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-* Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
+  ### The Dashboard consists of 4 pages:
+- Project Summary
+- Hypothesis Outline
+- House Price Data Exploration
+- House Price Estimator
+---
 
+### Project Summary:
+  Contains a brief description of the dataset and the business requirements.
+
+### Hypothesis Outline:
+  Contains a brief outline of the project hypothesis as well as the results of the Feature Importance study.
+
+### House Price Data Exploration:
+  * Contains a sample of the dataset, made visible by selecting the indicated checkbox.
+
+  * Displays the outcome of the corrolation study and the 6 identified features, as well as explanations of those features.
+
+  * Contains a checkbox to reveal a heatmap of the key property features.
+
+  * Contains a checkbox to access the scatter plots for the key features.
+
+### House Price Estimator:
+  Provides details of the inherited houses data set, as well as the estimated sale price for each house.
+
+  Provides an interactive House Price Estimator, allowing the user to set the two features identified as having the highest Predictive Power Score. (GrLivArea and OverallQual)
+
+  Once the values are set, the user can run the data through the ML Pipeline to be presented with the estimated Sale Price.
 
 
 ## Unfixed Bugs
