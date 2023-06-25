@@ -123,7 +123,7 @@ Although your friend has an excellent understanding of property prices in her ow
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: [https://whispering-hollows-22544-495a525fa4fe.herokuapp.com/](https://whispering-hollows-22544-495a525fa4fe.herokuapp.com/) 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -135,27 +135,50 @@ Although your friend has an excellent understanding of property prices in her ow
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+#### The libraries used in this project are:
+numpy==1.18.5
+
+pandas==1.4.2
+
+matplotlib==3.3.1
+
+seaborn==0.11.0
+
+pandas-profiling
+
+plotly==5.15.0
+
+ppscore==1.2.0
+
+joblib==1.2.0
+
+streamlit==1.23.1
+
+feature-engine==1.0.2
+
+imbalanced-learn==0.8.0
+
+scikit-learn==0.24.2
+
+xgboost==1.2.1
+
+yellowbrick==1.3
+
+Jinja2==3.1.1
+
+MarkupSafe==2.0.1
+
+protobuf==3.20
+
+ipywidgets==8.0.2
+
+altair==4.1.0
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* In case you would like to thank the people that provided support through this project.
+* Main examples and guidance came was taken from the Code Institute Churnometer walkthrough project and the Scikit-learn lesson in the Data Analysis and Machine Learning Toolkit modules.
+* Most of the code was taken from the Code Institute sources and adapted for this usecase.
+* Big thanks to my mentor Precious Ijege for his guidance and willingness to answer questions - and keep me looking for the answers myself.
+* Being able to review and compare my growing project with the example project was especially helpful when I got stuck down rabbit holes. (https://github.com/pieterkdevilliers/Sample-PP5)
 
