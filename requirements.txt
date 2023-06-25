@@ -6,6 +6,7 @@ pandas-profiling
 plotly==4.12.0
 ppscore==1.2.0
 joblib==1.2.0
+Streamlit==1.1.0
 
 streamlit==0.85.0
 
