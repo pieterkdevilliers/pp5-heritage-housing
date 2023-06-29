@@ -36,20 +36,20 @@ def ml_model_overview():
     st.image(house_price_feat_importance)
     st.write("---")
 
-    # show pipeline steps
-    # Convert pipeline to dictionary
-    pipeline_dict = {
-        'steps': [
-            (step_name, step) for step_name, step in pipeline.steps
-        ]
-    }
+    # # show pipeline steps
+    # # Convert pipeline to dictionary
+    # pipeline_dict = {
+    #     'steps': [
+    #         (step_name, step) for step_name, step in pipeline.steps
+    #     ]
+    # }
 
-    pipeline_info = [(step_name, step) for step_name, step in pipeline.steps]
+    # pipeline_info = [(step_name, step) for step_name, step in pipeline.steps]
 
-    # Render pipeline steps
-    st.write("* **ML Pipeline Steps Overview**")
-    st.write(pipeline_info)
-    st.write("---")
+    # # # Render pipeline steps
+    # # st.write("* **ML Pipeline Steps Overview**")
+    # # st.write(pipeline_info)
+    # # st.write("---")
 
     # evaluate performance on train and test sets
     regression_performance(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test, pipeline=pipeline)
