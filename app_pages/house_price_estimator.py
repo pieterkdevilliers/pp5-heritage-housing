@@ -18,7 +18,7 @@ def house_price_estimator():
 	
     # load files needed for estimating house prices 
     version = 'v1'
-    pipeline = joblib.load(f"outputs/predict_price/{version}/best_regressor_pipeline.pkl")
+    pipeline = joblib.load(f"outputs/predict_price/{version}/best_regressor_pipeline_updated.pkl")
     best_features = (pd.read_csv(f"outputs/predict_price/{version}/X_train.csv")
                             .columns
                             .to_list()
