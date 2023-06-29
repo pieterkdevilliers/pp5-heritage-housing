@@ -123,7 +123,7 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Unfixed Bugs
-* No bugs identified on deployment.
+* When deploying to Heroku, there is an error on the ML Model Overview page when loading the Pipeline Steps. The error references: AttributeError: 'RandomForestRegressor' object has no attribute 'min_impurity_split'. This appears to be a conflict with scikit-learn versions between training the model and runtime on Heroku. I tried updating scikit-learn in order to retrain the model, but this did not resolve the issue, as it generates over 3500 lines of sub-process failing errors when trying to install.
 
 ## Deployment
 ### Heroku
