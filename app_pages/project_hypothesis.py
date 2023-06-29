@@ -11,7 +11,8 @@ def project_hypothesis():
         f" In order to estimate the sale price of a property,\n"
         f"we need to determine which of the property features correlated more closely to the sale price.\n"
         f"In this project we are using Spearman and Pearson correlation to study the feature correlation to the sale price.\n"
-        f"We are using Predictive Power Score to determine the features of a property most closely correlated to the sale price.\n")
+        f"We are using Predictive Power Score to determine the features of a property most closely correlated to the sale price.\n"
+        )
     
     st.write("### Feature Importance Results")
     st.write(

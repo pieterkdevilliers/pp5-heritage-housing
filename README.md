@@ -87,10 +87,11 @@ Although your friend has an excellent understanding of property prices in her ow
 
 
 ## Dashboard Design
-  ### The Dashboard consists of 4 pages:
+  ### The Dashboard consists of 5 pages:
 - Project Summary
 - Hypothesis Outline
 - House Price Data Exploration
+- ML Model Overview
 - House Price Estimator
 ---
 
@@ -115,6 +116,10 @@ Although your friend has an excellent understanding of property prices in her ow
   Provides an interactive House Price Estimator, allowing the user to set the two features identified as having the highest Predictive Power Score. (GrLivArea and OverallQual)
 
   Once the values are set, the user can run the data through the ML Pipeline to be presented with the estimated Sale Price.
+
+### ML Model Overview:
+  Provides an overview of the ML Model Performance. Includes a Bar Plot showing the outcome of the Feature Importance Study, followed by the Pipeline Steps.
+  This page also presents a Model Evaluation by computing the R2 score, 3 key error measures and a scatterplot of Estimated vs Actual Sale Price - Sale Price is the Target.
 
 
 ## Unfixed Bugs
