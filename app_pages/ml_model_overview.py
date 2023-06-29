@@ -10,7 +10,7 @@ def ml_model_overview():
 
     # loadind house price pipeline files
     version = 'v1'
-    pipeline = load_pkl_file(f"outputs/predict_price/{version}/best_regressor_pipeline.pkl")
+    pipeline = load_pkl_file(f"outputs/predict_price/{version}/best_regressor_pipeline_updated.pkl")
     house_price_feat_importance = plt.imread(f"outputs/predict_price/{version}/features_importance.png")
     X_train = pd.read_csv(f"outputs/predict_price/{version}/X_train.csv")
     X_test = pd.read_csv(f"outputs/predict_price/{version}/X_test.csv")
